@@ -1,4 +1,31 @@
+# ================================
+# Dependencies
+# ================================
+node_modules
+.pnp
+.pnp.js
+
+# ================================
+# Build Outputs
+# ================================
+dist
+dist-ssr
+build
+out
+
+# ================================
+# Environment & Secrets
+# ================================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+
+# ================================
 # Logs
+# ================================
 logs
 *.log
 npm-debug.log*
@@ -7,18 +34,61 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# ================================
+# Local / Temp Files
+# ================================
 *.local
+*.local.*
 
-# Editor directories and files
+# Stray media files in root (e.g. WhatsApp images)
+*.jpeg
+*.jpg
+*.png
+*.gif
+*.webp
+# Note: If you intentionally commit images inside src/ or public/, those are still tracked.
+# This rule only applies to the root-level loose files; to be safe we use negation below:
+!public/**
+!src/**
+
+# ================================
+# macOS System Files
+# ================================
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# ================================
+# Editor Directories & Files
+# ================================
 .vscode/*
 !.vscode/extensions.json
+!.vscode/settings.json
 .idea
-.DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+*.swp
+
+# ================================
+# TypeScript
+# ================================
+*.tsbuildinfo
+
+# ================================
+# Testing & Coverage
+# ================================
+coverage
+.nyc_output
+
+# ================================
+# Misc
+# ================================
+.cache
+.parcel-cache
+.turbo
+.vercel
+.netlify
