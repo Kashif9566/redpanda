@@ -1,0 +1,261 @@
+import React from "react";
+import { cn } from "../../utils/cn";
+import redpandaicon from "/assets/images/redpandaicon.png";
+import { motion, AnimatePresence } from "framer-motion";
+import type { Variants, Transition } from "framer-motion";
+
+const baseclasses =
+    "absolute cursor-pointer select-none flex items-center justify-center ";
+
+type Dir = "left" | "right";
+
+const springTransition: Transition = {
+    type: "spring",
+    stiffness: 120,
+    damping: 18,
+    mass: 0.8,
+};
+
+const slideIn = {
+    hidden: (c: { dir: Dir; delay?: number }) => ({
+        opacity: 0,
+        x: c.dir === "left" ? -90 : 90,
+        filter: "blur(6px)",
+        scale: 0.98,
+    }),
+    visible: (c: { dir: Dir; delay?: number }) => ({
+        opacity: 1,
+        x: 0,
+        filter: "blur(0px)",
+        scale: 1,
+        transition: { ...springTransition, delay: c.delay ?? 0 },
+    }),
+} satisfies Variants;
+
+const DesignandIdeaComp = ({
+    className,
+    textclassName,
+    appearFrom = "left",
+    delay = 0,
+    children
+}: {
+    className: React.ComponentProps<"div">["className"];
+    textclassName?: React.ComponentProps<"p">["className"];
+    appearFrom?: Dir;
+    delay?: number;
+    children?: React.ReactNode;
+}) => {
+    return <motion.div
+        className={cn(
+            "transition-colors border-2 duration-[2000ms] active:duration-0 group",
+            baseclasses,
+            className
+        )}
+        variants={slideIn}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.35 }}
+        custom={{ dir: appearFrom, delay }}
+    >
+        <p
+            className={cn(
+                "font-chillax font-semibold uppercase text-[3.3vw] leading-[3vw] md:tracking-[-5px]",
+                "transition-colors duration-[2000ms] group-active:duration-0",
+                textclassName
+            )}
+        >
+            {children}
+        </p>
+    </motion.div>
+};
+
+const PlanningandIdeaComp = ({
+    wrapperClassName,
+    appearFrom = "left",
+    delay = 0.15,
+}: {
+    wrapperClassName?: React.ComponentProps<"div">["className"];
+    appearFrom?: Dir;
+    delay?: number;
+}) => {
+    const [hovered, setHovered] = React.useState(false);
+
+    return (
+        <motion.div
+            variants={slideIn}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.35 }}
+            custom={{ dir: appearFrom, delay }}
+            className={cn("absolute cursor-pointer z-10", wrapperClassName)}
+            onHoverStart={() => setHovered(true)}
+            onHoverEnd={() => setHovered(false)}
+        >
+                <svg
+                    viewBox="0 0 387 223"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-[28vw] h-[16vw] xl:w-[24.14rem] xl:h-[13.9375rem]"
+                >
+                <path
+                    d="M193.124 223L0 111.5L193.124 0L386.247 111.5L193.124 223Z"
+                    fill="#9CFF38"
+                />
+                <foreignObject x="90" y="40" width="200" height="150">
+                    <div
+                        style={{
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            flexDirection: "column",
+                            width: "100%",
+                            height: "100%",
+                        }}
+                    >
+                        <AnimatePresence mode="wait" initial={false}>
+                            {hovered ? (
+                                <motion.img
+                                    key="icon"
+                                    src={redpandaicon}
+                                    width={100}
+                                    height={100}
+                                    alt="Red Panda"
+                                    className="object-contain"
+                                    initial={{ opacity: 0, scale: 0.9 }}
+                                    animate={{ opacity: 1, scale: 1 }}
+                                    exit={{ opacity: 0, scale: 1.05 }}
+                                    transition={{ duration: 0, ease: "easeOut" }}
+                                />
+                            ) : (
+                                <motion.p
+                                    key="text"
+                                    className="text-black text-[30px] font-comforter text-center xl:text-[2.387rem]! xl:leading-[2.4275rem] xl:tracking-[0.14rem]"
+                                    initial={{ opacity: 0, scale: 1.05 }}
+                                    animate={{ opacity: 1, scale: 1 }}
+                                    exit={{ opacity: 0, scale: 0.95 }}
+                                    transition={{ duration: 0.25, ease: "easeOut" }}
+                                >
+                                    Planning
+                                    <br /> & <br />
+                                    Research
+                                </motion.p>
+                            )}
+                        </AnimatePresence>
+                    </div>
+                </foreignObject>
+            </svg>
+        </motion.div>
+    );
+};
+
+const ComposingHandoffComp = ({
+    className,
+    textclassName,
+    appearFrom = "right",
+    delay = 0.15,
+}: {
+    className: React.ComponentProps<"div">["className"];
+    textclassName?: React.ComponentProps<"p">["className"];
+    appearFrom?: Dir;
+    delay?: number;
+}) => {
+    const [hovered, setHovered] = React.useState(false);
+
+    return (
+        <motion.div
+            className={cn(
+                "transition-colors border-2 duration-[2000ms] active:duration-0 group",
+                baseclasses,
+                className
+            )}
+            variants={slideIn}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.35 }}
+            custom={{ dir: appearFrom, delay }}
+            onHoverStart={() => setHovered(true)}
+            onHoverEnd={() => setHovered(false)}
+        >
+            <AnimatePresence mode="wait" initial={false}>
+                {hovered ? (
+                    <motion.img
+                        key="panda"
+                        src="/assets/images/loader_panda.png"
+                        alt="Red Panda"
+                        className="object-contain w-[80%] h-[80%]"
+                        initial={{ opacity: 0, scale: 0.8 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        exit={{ opacity: 0, scale: 0.8 }}
+                        transition={{ duration: 0.25, ease: "easeOut" }}
+                    />
+                ) : (
+                    <motion.p
+                        key="text"
+                        className={cn(
+                            "font-chillax font-semibold uppercase text-[1.8vw] leading-[1.8vw] md:tracking-[-3px]",
+                            "transition-colors duration-[2000ms] group-active:duration-0 text-center",
+                            textclassName
+                        )}
+                        initial={{ opacity: 0, scale: 1.05 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        exit={{ opacity: 0, scale: 0.95 }}
+                        transition={{ duration: 0.25, ease: "easeOut" }}
+                    >
+                        Composing
+                        <br /> & 
+                        Handoff
+                    </motion.p>
+                )}
+            </AnimatePresence>
+        </motion.div>
+    );
+};
+
+const Workflowelements = () => {
+
+    return (
+        <div className="absolute inset-0">
+            <DesignandIdeaComp
+                appearFrom="left"
+                delay={0.5}
+                className={cn(
+                    "bg-purple-primary hover:bg-purple-dark border-transparent active:border-purple-dark active:bg-white rounded-[10px] md:rounded-[20px] xl:rounded-[1.75rem]",
+                    "w-[17vw] h-[10vw] xl:h-[9.75rem] xl:top-[8%] xl:left-[12.5%] xl:py-[2.125rem] xl:px-[1.8125rem]"
+                )}
+                textclassName="text-white group-active:text-purple-dark"
+            >
+                Design <br /> & Idea
+            </DesignandIdeaComp>
+
+            <PlanningandIdeaComp
+                appearFrom="left"
+                delay={0.5}
+                wrapperClassName="left-[11vw] top-[58%] xl:top-[49%] xl:left-[10.6%]"
+            />
+
+            <DesignandIdeaComp
+                appearFrom="right"
+                delay={0.5}
+                className={cn("bg-yellow-primary-500 hover:bg-yellow-primary-400 border-transparent active:border-yellow-primary-500 active:bg-white rounded-[10px] md:rounded-[20px] xl:rounded-[1.75rem]",
+                    "w-[16vw] h-[13vw] xl:w-[15.3125rem] xl:h-[12.8125rem] xl:top-[7%]",
+                    "right-[5%]"
+                )}
+                textclassName="text-white group-active:text-yellow-primary-500 text-[2.5vw] leading-[2.5vw] xl:text-[3.213rem]"
+            >
+                Design <br />
+                & Dev
+            </DesignandIdeaComp>
+            <ComposingHandoffComp
+                appearFrom="right"
+                delay={0.5}
+                className={cn(
+                    "bg-red-primary-400 hover:bg-red-primary-500 border-transparent active:border-red-primary-400 active:bg-white rounded-[10px] md:rounded-[20px] xl:rounded-[1.75rem]",
+                    "w-[16vw] h-[8vw] xl:w-[19.5rem] xl:h-[10.375rem] xl:top-[52%] xl:left-[74%]"
+                )}
+                textclassName="text-white group-active:text-yellow-primary-500 text-[2.5vw] leading-[2.5vw] xl:text-[3.196rem] xl:leading-[2.75rem] xl:tracking-[-0.375rem]"
+            />
+        </div>
+    );
+};
+
+export default Workflowelements;
