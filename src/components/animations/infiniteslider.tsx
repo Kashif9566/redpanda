@@ -212,7 +212,6 @@ export const InfiniteSlider = React.memo<InfiniteSliderProps>(
             window.addEventListener("load", onLoad);
             document.addEventListener("visibilitychange", onVisibility);
             // fonts.ready can change text width after mount
-            // @ts-ignore
             document.fonts?.ready?.then(() => updateDimensions()).catch(() => {});
 
             return () => {

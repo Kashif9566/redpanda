@@ -7,7 +7,6 @@ import { THEME_STYLES } from "../../constants/themeStyles";
 
 const Ratingscard = ({ showgoggleratings = true, isClientReview = true, className }: RatingsCardProps) => {
   const theme = useSiteTheme();
-  // @ts-ignore - cardStyles might have dimensions depending on theme
   const cardStyles = THEME_STYLES.RatingsCard[theme];
 
   return (

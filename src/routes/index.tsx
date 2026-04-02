@@ -13,6 +13,8 @@ import NotFound from "../pages/404/404";
 import ThankYou from "../pages/Thankyou/thankyou";
 import PamperProCaseStudy from "../pages/PamperproCasestudy";
 import KlemAppCaseStudy from "../pages/klemAppCaseStudy";
+import AlohaCaseStudy from "../pages/AlohaCaseStudy";
+import DronketCaseStudy from "../pages/DronketCaseStudy/index.tsx";
 
 const router = createBrowserRouter([
   {
@@ -65,6 +67,14 @@ const router = createBrowserRouter([
       {
         path: "/casestudy/klem-app",
         element: <KlemAppCaseStudy />,
+      },
+      {
+        path: "/casestudy/aloha",
+        element: <AlohaCaseStudy />,
+      },
+      {
+        path: "/casestudy/dronket",
+        element: <DronketCaseStudy />,
       },
       {
         path: "*",

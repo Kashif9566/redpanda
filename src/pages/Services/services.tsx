@@ -3,7 +3,6 @@ import HeaderFooterLayout from "../../layout/headerfooterlayout";
 import Clientsreviews from "../shared/clientsreviews";
 import Faqsection from "../shared/faqsection";
 import Journeysection from "../shared/journeysection";
-import Conceptodesign from "./conceptodesign";
 import Herosection from "./herosection";
 import Servicesdetail from "./servicesdetail";
 import Industries from "./industries";
@@ -18,7 +17,7 @@ const Services = () => {
     lastSectionOverflow: "visible"
   });
 
-  const { mainPinRef, conceptRef } = useVerticalWipeAnimation({
+  const { mainPinRef } = useVerticalWipeAnimation({
     desktopSlideSelector: ".conceptdesign-desktop-section",
     mobileSlideSelector: ".conceptdesign-mobile-section",
   });
