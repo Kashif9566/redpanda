@@ -1,5 +1,4 @@
 import topbgimage from "../../../public/assets/images/getquote/getquotetopbg.png"
-import bottombgimage from "../../../public/assets/images/getquote/getquotebottombg.png"
 import { useSiteTheme } from "../../hooks/useSiteTheme";
 import { THEME_STYLES } from "../../constants/themeStyles";
 

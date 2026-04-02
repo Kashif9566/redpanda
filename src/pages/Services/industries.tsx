@@ -5,7 +5,6 @@ import cryptoandweb3image from "../../../public/assets/images/industries/cryptoa
 import packagingimage from "../../../public/assets/images/industries/packaging.png";
 import healthcareimage from "../../../public/assets/images/industries/healthcare.png";
 import logisticsimage from "../../../public/assets/images/industries/logistics.png";
-import redpandalogo from "../../../public/logo.png";
 import thankyoupanda from "../../../public/assets/images/notfound/thankyoupanda.png"
 import Industryredcardheading from "@/components/industries/industryredcardheading";
 import flyingarrowimg from "../../../public/assets/images/industries/flyingarrow.png";

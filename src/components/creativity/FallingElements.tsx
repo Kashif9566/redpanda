@@ -164,7 +164,7 @@ const FallingElements: React.FC<FallingElementsProps> = ({
 
         // Track if mouse left - disable clamping temporarily
         let mouseHasLeft = false;
-        let fallTimeout:any = null;
+        let fallTimeout: string | number | NodeJS.Timeout | null = null;
 
         // Handle mouse leave - release grabbed elements and make them fall
         const handleMouseLeave = () => {
@@ -172,7 +172,8 @@ const FallingElements: React.FC<FallingElementsProps> = ({
             
             // Release any currently grabbed body
             if (mouseConstraint.body) {
-               (mouseConstraint as any).body = null;
+               // @ts-expect-error - body property exists but is read-only in some versions of matter-js types
+               mouseConstraint.body = null;
             }
             
             // Make all elements fall by giving them strong downward velocity
