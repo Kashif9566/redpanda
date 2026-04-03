@@ -46,7 +46,7 @@ export const useScrollFadeIn = ({
         elements.forEach((el) => {
             // --- 3. Set Initial State ---
             // We set the element to be invisible and in its starting position.
-            let initialProps: gsap.TweenVars = { opacity: 0 };
+            const initialProps: gsap.TweenVars = { opacity: 0 };
 
             switch (direction) {
                 case "left":

@@ -63,7 +63,9 @@ export const useTextScrollFillAnimation = ({
       return () => {
         try {
           split?.revert();
-        } catch {}
+        } catch {
+          // Ignore revert errors on unmount
+        }
       };
     },
     {

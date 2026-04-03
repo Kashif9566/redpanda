@@ -86,7 +86,7 @@ export const useGetTags = () => {
         const fetchTags = async () => {
             try {
                 const { data } = await axios.get(`${BASE_URL}/tags?api_key=${API_KEY}`);
-                const mappedTags = data.map((tag: any) => ({
+                const mappedTags = data.map((tag: { term_id: number; name: string; slug: string }) => ({
                     id: tag.term_id,
                     name: tag.name,
                     slug: tag.slug,
