@@ -8,7 +8,7 @@ const SolutionSection = () => {
         
         {/* Book Background */}
         <img 
-          src="/src/assets/images/aloha/open-book-blank-white-pages 1.png" 
+          src="/assets/images/aloha/open-book-blank-white-pages 1.png" 
           alt="Open Book Background" 
           className="absolute inset-0 w-full h-full object-fill z-0 drop-shadow-2xl"
         />
@@ -54,7 +54,7 @@ const SolutionSection = () => {
         {/* Right Page (Image area) */}
         <div className="absolute top-[5%] right-[5%] w-[42%] h-[90%] flex items-center justify-center z-10">
           <img 
-            src="/src/assets/images/aloha/Frame 2087328104.png" 
+            src="/assets/images/aloha/Frame 2087328104.png" 
             alt="Aloha Solution Screens" 
             className="w-full h-full object-contain opacity-90 mix-blend-multiply mix-blend-darken"
           />

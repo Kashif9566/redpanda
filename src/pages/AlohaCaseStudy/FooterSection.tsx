@@ -31,7 +31,7 @@ const FooterSection = () => {
         {/* Right - Image block */}
         <div className="w-full md:w-[35%] bg-[#9A9A9A] flex items-center justify-center p-8 md:p-12 mb-10 md:mb-0 md:mr-10 md:mt-10 md:mb-10 min-h-[300px]">
           <img 
-            src="/src/assets/images/aloha/Image Container.png" 
+            src="/assets/images/aloha/Image Container.png" 
             alt="Device Mockup" 
             className="w-full h-auto object-contain drop-shadow-2xl"
           />
