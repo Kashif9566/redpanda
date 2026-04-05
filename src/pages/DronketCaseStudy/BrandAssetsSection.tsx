@@ -45,15 +45,15 @@ const BrandAssetsSection = () => {
 
       {/* Colors Block */}
       <div className="w-full h-200 flex flex-col justify-end items-center relative">
-        <img src="/src/assets/images/dronket/HorizontalExposure.png" alt="star" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
+        <img src="/assets/images/dronket/HorizontalExposure.png" alt="star" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
         <div className="absolute top-[20%] left-[20%] text-[#FF6200] z-0">
-          <img src="/src/assets/svg/Frame 2087328190.svg" alt="star" className="w-24 h-24" />
+          <img src="/assets/svg/Frame 2087328190.svg" alt="star" className="w-24 h-24" />
         </div>
         <h2 className="absolute top-[40%] left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center items-center h-[400px] font-big-shoulders text-[6rem] md:text-[19rem] font-extrabold uppercase leading-[0.8] text-center z-10 tracking-tighter">
           <span className="mb-4 text-[#FF6200]">COLORS</span> <span className="text-[#FAFAFA]">USED</span>
         </h2>
         <div className="absolute top-[20%] right-[20%] text-[#FF6200] z-0">
-          <img src="/src/assets/svg/Frame 2087328190.svg" alt="star" className="w-24 h-24" />
+          <img src="/assets/svg/Frame 2087328190.svg" alt="star" className="w-24 h-24" />
         </div>
 
         {/* Palette Row */}

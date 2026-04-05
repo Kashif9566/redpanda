@@ -7,7 +7,7 @@ const HeroSection = () => {
       {/* Scroll Down - Far Left Outside Border */}
       <div className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 z-30">
         <img 
-          src="/src/assets/svg/Frame 2087328155.svg" 
+          src="/assets/svg/Frame 2087328155.svg" 
           alt="Scroll Down" 
           className="h-[300px] md:h-[370px] w-auto relative top-[3px] left-[-23px]"
         />
@@ -37,7 +37,7 @@ const HeroSection = () => {
         {/* Top Exposure Effect */}
         <div className="absolute top-[-20px] left-1/2 -translate-x-1/2 w-screen z-10 pointer-events-none opacity-80">
            <img 
-             src="/src/assets/images/dronket/TopExposure.png" 
+             src="/assets/images/dronket/TopExposure.png" 
              alt="Exposure top" 
              className="w-full h-auto"
            />
@@ -103,7 +103,7 @@ const HeroSection = () => {
         {/* Drone Composition overlapping Bottom Border */}
         <div className="absolute w-1/2 bottom-[2%] max-w-[1000px] -mt-32 md:-mt-48 z-20 pointer-events-none drop-shadow-[0_50px_50px_rgba(0,0,0,0.9)] flex justify-center">
            <img 
-             src="/src/assets/images/dronket/HeroDron.png" 
+             src="/assets/images/dronket/HeroDron.png" 
              alt="Hero Drone" 
              className="w-[110%] h-auto scale-110"
            />
@@ -113,17 +113,17 @@ const HeroSection = () => {
         <div className="absolute bottom-[2%] w-full flex justify-between px-10 md:px-20 pb-10 z-20 -mt-8 md:-mt-16">
           {/* Left ( + ) */}
           <div className="flex items-center gap-2">
-            <img src="/src/assets/svg/Ellipse 262.svg" alt="shape" className="w-5 md:w-10 h-auto" />
-            <img src="/src/assets/svg/Ellipse 262.svg" alt="shape" className="w-5 md:w-10 h-auto" />
-            <img src="/src/assets/svg/Star 8.svg" alt="star" className="w-5 md:w-16 h-auto" />
-            <img src="/src/assets/svg/Ellipse 262.svg" alt="shape" className="w-5 md:w-10 h-auto scale-x-[-1]" />
+            <img src="/assets/svg/Ellipse 262.svg" alt="shape" className="w-5 md:w-10 h-auto" />
+            <img src="/assets/svg/Ellipse 262.svg" alt="shape" className="w-5 md:w-10 h-auto" />
+            <img src="/assets/svg/Star 8.svg" alt="star" className="w-5 md:w-16 h-auto" />
+            <img src="/assets/svg/Ellipse 262.svg" alt="shape" className="w-5 md:w-10 h-auto scale-x-[-1]" />
           </div>
           {/* Right ( + ) */}
           <div className="flex items-center gap-2">
-            <img src="/src/assets/svg/Ellipse 262.svg" alt="shape" className="w-5 md:w-10 h-auto" />
-            <img src="/src/assets/svg/Star 8.svg" alt="star" className="w-5 md:w-16 h-auto" />
-            <img src="/src/assets/svg/Ellipse 262.svg" alt="shape" className="w-5 md:w-10 h-auto scale-x-[-1]" />
-            <img src="/src/assets/svg/Ellipse 262.svg" alt="shape" className="w-5 md:w-10 h-auto scale-x-[-1]" />
+            <img src="/assets/svg/Ellipse 262.svg" alt="shape" className="w-5 md:w-10 h-auto" />
+            <img src="/assets/svg/Star 8.svg" alt="star" className="w-5 md:w-16 h-auto" />
+            <img src="/assets/svg/Ellipse 262.svg" alt="shape" className="w-5 md:w-10 h-auto scale-x-[-1]" />
+            <img src="/assets/svg/Ellipse 262.svg" alt="shape" className="w-5 md:w-10 h-auto scale-x-[-1]" />
           </div>
         </div>
 

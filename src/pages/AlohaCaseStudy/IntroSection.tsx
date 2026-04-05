@@ -19,7 +19,7 @@ const IntroSection = () => {
       {/* Right Column - Desktop Mockup Image */}
       <div className="w-full md:w-[65%] flex justify-center md:justify-end relative z-10">
         <img 
-          src="/src/assets/images/aloha/Frame 2087328098.png" 
+          src="/assets/images/aloha/Frame 2087328098.png" 
           alt="Aloha Desktop Mockup" 
           className="w-full max-w-[900px] h-auto object-contain drop-shadow-2xl"
         />

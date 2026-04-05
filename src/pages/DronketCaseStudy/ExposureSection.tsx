@@ -4,7 +4,7 @@ const ExposureSection = () => {
 
       {/* Abstract overlapping images layout */}
       <div className="relative w-full h-225 bg-center bg-no-repeat bg-contain">
-        <img src="/src/assets/images/dronket/TopExposure.png" alt="top exposure" className="w-screen" />
+        <img src="/assets/images/dronket/TopExposure.png" alt="top exposure" className="w-screen" />
         <p className="text-[#FF6200] w-[60vw] text-right text-[1rem] font-outfit absolute top-[10%] right-[10%]">Convert environments into  engaging 3D digital models to enhance planning and visualization of landscapes and buildings.Convert environments into Convert environments into  engaging 3D digital models to enhance planning and visualization of landscapes and buildings.Convert environments into Convert environments into  engaging 3D digital models to enhance planning and visualization of landscapes and buildings.Convert environments into Convert environments into  engaging 3D digital models to enhance planning and visualization of landscapes and buildings.Convert environments into </p>
         
 
@@ -20,16 +20,16 @@ const ExposureSection = () => {
       </div>
 
       <div className=" relative w-full h-225 bg-center bg-no-repeat bg-contain">
-        <img src="/src/assets/images/dronket/TopExposure.png" alt="bottom exposure" className="w-screen" />
+        <img src="/assets/images/dronket/TopExposure.png" alt="bottom exposure" className="w-screen" />
       {/* Top Left Image */}
         <img 
-          src="/src/assets/images/dronket/4thSectionTopLeft.png" 
+          src="/assets/images/dronket/4thSectionTopLeft.png" 
           alt="Top Left Interface" 
           className="absolute top-[0%] left-[0%] w-screen rotate-0 rounded-lg shadow-2xl z-10"
         />
         
         <img 
-          src="/src/assets/images/dronket/4thSectionBottomRight.png" 
+          src="/assets/images/dronket/4thSectionBottomRight.png" 
           alt="Bottom Right Interface" 
           className="absolute bottom-[0%] right-[0%] w-screen rotate-0 rounded-lg shadow-2xl z-20"
         />
@@ -54,7 +54,7 @@ const ExposureSection = () => {
           </p>
         </div>
 
-        <img src="/src/assets/images/dronket/DiagonalExposure.png" alt="bottom exposure" className="absolute bottom-0 left-0 w-screen h-full rotate-y-[-180deg]" />
+        <img src="/assets/images/dronket/DiagonalExposure.png" alt="bottom exposure" className="absolute bottom-0 left-0 w-screen h-full rotate-y-[-180deg]" />
 
       </div>
 
