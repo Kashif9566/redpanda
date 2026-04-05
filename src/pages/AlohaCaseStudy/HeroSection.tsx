@@ -46,7 +46,7 @@ const HeroSection = () => {
           {/* Overlapping Image Container */}
           <div className="absolute right-4 md:right-12 top-1/2 -translate-y-1/2 w-1/3 md:w-1/2 lg:w-[45%] max-w-[800px] z-20">
             <img 
-              src="/src/assets/images/aloha/Scene 13 2.png" 
+              src="/assets/images/aloha/Scene 13 2.png" 
               alt="Aloha Hero Mockup" 
               className="w-full h-auto object-contain transform origin-center"
             />

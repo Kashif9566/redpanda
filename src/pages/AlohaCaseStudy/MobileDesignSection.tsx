@@ -6,7 +6,7 @@ const MobileDesignSection = () => {
       {/* Left Column - Mobile Mockup Image */}
       <div className="w-full md:w-[40%] flex justify-center md:justify-start">
         <img 
-          src="/src/assets/images/aloha/Frame 2087328103.png" 
+          src="/assets/images/aloha/Frame 2087328103.png" 
           alt="Aloha Mobile Mockup" 
           className="w-full max-w-[350px] h-auto object-contain drop-shadow-2xl"
         />
