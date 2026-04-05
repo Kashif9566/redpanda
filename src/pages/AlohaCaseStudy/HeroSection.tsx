@@ -4,12 +4,12 @@ const HeroSection = () => {
   return (
     <div className="w-full flex flex-col pt-6">
       {/* Top Header */}
-      <div className="px-6 md:px-12 flex justify-between items-center w-full">
+      <div className="flex justify-between items-center w-full">
         {/* NEW CASE STUDY - Left */}
         <NewCaseStudyBadge />
 
         {/* Logo */}
-        <div className="font-old-english text-6xl md:text-8xl tracking-tight text-[#101010]">
+        <div className="font-old-english text-6xl md:text-[8rem] tracking-tight text-[#101010]">
           Red Panda Network
         </div>
 
@@ -18,7 +18,7 @@ const HeroSection = () => {
       </div>
 
       {/* Ticker / Nav Bar */}
-      <div className="mt-6 w-full bg-[#101010] text-[#FAFAFA] flex flex-col md:flex-row justify-between items-center px-6 py-3 text-xs md:text-[14px] font-antonio uppercase tracking-widest font-semibold">
+      <div className="mt-8 w-full bg-[#101010] text-[#FAFAFA] flex flex-col md:flex-row justify-between items-center px-6 py-3 text-xs md:text-[14px] font-antonio uppercase tracking-widest font-semibold">
         <div className="text-gray-300">
           WE ARE REACHING THE NEW HEIGHTS IN THE DESIGN INDUSTRY & NEXT COULD BE YOUR PROJECT HERE
         </div>
@@ -32,19 +32,19 @@ const HeroSection = () => {
       </div>
 
       {/* ALOHA Text & Image Area */}
-      <div className="relative w-full overflow-hidden flex pt-8 pb-0">
+      <div className="w-full flex py-6 relative">
         
         {/* Right side black background block */}
-        <div className="absolute right-0 top-0 bottom-0 w-[25%] md:w-[35%] bg-[#101010] z-0"></div>
+        <img src="/assets/images/aloha/Rectangle 574056825.png" alt="black background" className="absolute right-0 top-0 w-[25%] md:w-[20%] md:h-[49.3vh] z-0" />
 
         {/* Huge ALOHA Text */}
-        <div className="w-full flex relative z-10 pl-6 md:pl-12">
-          <h1 className="text-[12rem] md:text-[23rem] lg:text-[28rem] font-antonio font-bold leading-[0.75] tracking-tighter text-[#101010] uppercase m-0 p-0 text-left">
-            ALOHA<span className="text-[#FAFAFA]">!</span>
+        <div className="w-full flex z-10">
+          <h1 className="text-[12rem] md:text-[23rem] lg:text-[30rem] font-antonio font-bold leading-[0.75] tracking-tighter text-[#101010] uppercase text-left">
+            ALOHA!
           </h1>
           
           {/* Overlapping Image Container */}
-          <div className="absolute right-4 md:right-12 top-1/2 -translate-y-1/2 w-1/3 md:w-1/2 lg:w-[45%] max-w-[800px] z-20">
+          <div className="absolute -bottom-10 right-[-8%] md:right-12 w-1/3 md:w-1/2 lg:w-[35%] max-w-[800px] z-20">
             <img 
               src="/assets/images/aloha/Scene 13 2.png" 
               alt="Aloha Hero Mockup" 
@@ -55,14 +55,11 @@ const HeroSection = () => {
       </div>
 
       {/* COMPANY FORMATION Banner */}
-      <div className="w-full bg-[#02612B] flex items-center px-6 md:px-12 py-4 md:py-6 text-[#FAFAFA]">
-        <h2 className="text-3xl md:text-5xl lg:text-7xl font-antonio font-bold tracking-tighter uppercase m-0 shrink-0">
+      <div className="mt-16 w-full bg-[#02612B] flex items-center px-6 md:px-12 py-4 md:py-6 text-[#FAFAFA]">
+        <h2 className="text-3xl md:text-5xl lg:text-7xl font-lufga font-extrabold tracking-tighter uppercase m-0 shrink-0">
           COMPANY FORMATION
         </h2>
-        <div className="grow flex items-center ml-6 md:ml-12 pr-4">
-          <div className="w-full h-1 md:h-[6px] bg-white"></div>
-          <div className="w-6 h-6 md:w-8 md:h-8 border-t-4 border-r-4 md:border-t-6 md:border-r-6 border-white transform rotate-45 -ml-1 md:-ml-2"></div>
-        </div>
+        <img src="/assets/svg/Arrow 23.svg" alt="arrow" className="w-[35vw] ml-[20px]" />
       </div>
     </div>
   );
