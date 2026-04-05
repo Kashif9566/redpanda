@@ -1,38 +1,61 @@
 const ExposureSection = () => {
   return (
-    <section className="w-full py-20 px-6 md:px-12 relative overflow-hidden flex flex-col items-center">
-      
+    <section className="w-full relative overflow-hidden flex flex-col items-center">
+
       {/* Abstract overlapping images layout */}
-      <div className="relative w-full max-w-[1200px] h-[600px] md:h-[800px] bg-center bg-no-repeat bg-contain" style={{ backgroundImage: "url('/src/assets/images/dronket/DiagonalExposure.png')" }}>
+      <div className="relative w-full h-225 bg-center bg-no-repeat bg-contain">
+        <img src="/src/assets/images/dronket/TopExposure.png" alt="top exposure" className="w-screen" />
+        <p className="text-[#FF6200] w-[60vw] text-right text-[1rem] font-outfit absolute top-[10%] right-[10%]">Convert environments into  engaging 3D digital models to enhance planning and visualization of landscapes and buildings.Convert environments into Convert environments into  engaging 3D digital models to enhance planning and visualization of landscapes and buildings.Convert environments into Convert environments into  engaging 3D digital models to enhance planning and visualization of landscapes and buildings.Convert environments into Convert environments into  engaging 3D digital models to enhance planning and visualization of landscapes and buildings.Convert environments into </p>
         
-        {/* Top Left Image */}
-        <img 
-          src="/src/assets/images/dronket/4thSectionTopLeft.png" 
-          alt="Top Left Interface" 
-          className="absolute top-[10%] left-[5%] w-[40%] -rotate-12 rounded-lg shadow-2xl z-10"
-        />
-        
-        {/* Bottom Right Image */}
-        <img 
-          src="/src/assets/images/dronket/4thSectionBottomRight.png" 
-          alt="Bottom Right Interface" 
-          className="absolute bottom-[10%] right-[5%] w-[45%] -rotate-12 rounded-lg shadow-2xl z-20"
-        />
-        
-        {/* Angled EXPLORE text */}
-        <div className="absolute right-[5%] top-[60%] font-big-shoulders text-[6rem] md:text-[10rem] text-[#FAFAFA] font-bold -rotate-24 transform translate-y-12">
-           EXPLORE
-        </div>
 
         {/* Text Block on the right */}
-        <div className="absolute top-[5%] md:top-[15%] right-0 md:right-[15%] text-right font-big-shoulders tracking-tighter uppercase leading-[0.8] z-30">
-          <p className="text-[2.5rem] md:text-[4rem] text-[#FAFAFA]">
-            THE SOLUTION WE PROVIDED<br/>
-            TEXT FOR THE CLIENT PROBLEMS<br/>
-            SOLUTION WE PROVIDED<br/>
+        <div className="absolute bottom-[10%] left-[10%] text-left font-big-shoulders font-extrabold tracking-tighter uppercase leading-[1] z-30">
+          <p className="text-[2.5rem] md:text-[5rem] text-[#FAFAFA]">
+            <span className="opacity-0">XX</span> THE SOLUTION WE PROVIDED<br />
+            TEXT FOR THE CLIENT PROBLEMS<br />
+            <span className="opacity-0">X</span> SOLUTION WE PROVIDED<br />
             <span className="text-[#FF6200]">THIS IS PLACEHOLDER</span>
           </p>
         </div>
+      </div>
+
+      <div className=" relative w-full h-225 bg-center bg-no-repeat bg-contain">
+        <img src="/src/assets/images/dronket/TopExposure.png" alt="bottom exposure" className="w-screen" />
+      {/* Top Left Image */}
+        <img 
+          src="/src/assets/images/dronket/4thSectionTopLeft.png" 
+          alt="Top Left Interface" 
+          className="absolute top-[0%] left-[0%] w-screen rotate-0 rounded-lg shadow-2xl z-10"
+        />
+        
+        <img 
+          src="/src/assets/images/dronket/4thSectionBottomRight.png" 
+          alt="Bottom Right Interface" 
+          className="absolute bottom-[0%] right-[0%] w-screen rotate-0 rounded-lg shadow-2xl z-20"
+        />
+
+        {/* Text Block on the right */}
+        <div className="absolute bottom-[10%] left-[10%] text-left font-big-shoulders font-extrabold tracking-tighter uppercase leading-[1] z-30">
+          <p className="text-[2.5rem] md:text-[3.5rem] text-[#FAFAFA]">
+            <span className="opacity-0">XX</span> THE SOLUTION WE PROVIDED<br />
+            TEXT FOR THE CLIENT PROBLEMS<br />
+            <span className="opacity-0">X</span> SOLUTION WE PROVIDED<br />
+            <span className="text-[#FF6200]">THIS IS PLACEHOLDER</span>
+          </p>
+        </div>
+
+        {/* Text Block on the right */}
+        <div className="absolute top-[10%] right-[10%] text-left font-big-shoulders font-extrabold tracking-tighter uppercase leading-[1] z-30">
+          <p className="text-[2.5rem] md:text-[3.5rem] text-[#FAFAFA]">
+            <span className="opacity-0">X</span> THE SOLUTION WE PROVIDED<br />
+            TEXT FOR THE CLIENT PROBLEMS<br />
+            <span className="opacity-0">XXXXX</span> SOLUTION WE PROVIDED<br />
+            <span className="opacity-0">XXXXXXXXX</span> <span className="text-[#FF6200]">THIS IS PLACEHOLDER</span>
+          </p>
+        </div>
+
+        <img src="/src/assets/images/dronket/DiagonalExposure.png" alt="bottom exposure" className="absolute bottom-0 left-0 w-screen h-full rotate-y-[-180deg]" />
+
       </div>
 
     </section>
