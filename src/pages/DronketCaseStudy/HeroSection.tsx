@@ -72,36 +72,36 @@ const HeroSection = () => {
         </div>
 
         {/* Title branding (REDPANDA NETWORK) */}
-        <div className="relative w-full flex flex-col items-center mt-4 z-10 font-big-shoulders uppercase select-none">
-          <div className="text-[10rem] md:text-[16rem] lg:text-[20rem] text-[#FF6200] leading-[0.75]">
+        <div className="absolute top-[9%] w-fit flex flex-col items-center mt-4 z-10 font-big-shoulders uppercase select-none">
+          <div className="text-[10rem] md:text-[16rem] lg:text-[10rem] mb-14 font-extrabold text-[#FF6200] leading-[0.75]">
              REDPANDA
           </div>
 
           {/* Drontek Tag Intersecting */}
-          <div className="absolute top-[42%] left-1/2 -translate-x-1/2 z-30 bg-[#101010] border border-white/10 px-8 py-2 rounded-full shadow-[0_0_20px_rgba(255,98,0,0.15)]">
-             <span className="text-[#FAFAFA] text-sm md:text-xl font-k2d font-bold tracking-[0.2em]">DRONTEK CASE STUDY</span>
+          <div className="absolute w-max top-[42%] left-1/2 -translate-x-1/2 z-30 bg-[#101010] border border-white/10 px-8 py-2 rounded-full shadow-[0_0_20px_rgba(255,98,0,0.15)]">
+             <span className="text-[#FF6200] text-sm md:text-lg font-big-shoulders font-900 tracking-[0.2em]">DRONTEK CASE STUDY</span>
           </div>
 
-          <div className="text-[10rem] md:text-[16rem] lg:text-[20rem] text-[#FAFAFA] leading-[0.75] -mt-4 md:-mt-10">
+          <div className="text-[10rem] md:text-[16rem] lg:text-[10rem] font-extrabold text-[#FAFAFA] leading-[0.75] -mt-4 md:-mt-10">
              NETWORK
           </div>
         </div>
 
         {/* Social Sidebar (Right Side Inside) */}
-        <div className="absolute right-6 top-1/2 -translate-y-1/2 flex flex-col gap-6 z-20">
-          <div className="p-2 border border-[#FF6200] rounded-lg hover:bg-[#FF6200]/10 transition-all cursor-pointer">
-            <InstagramIcon width={20} height={20} color="#FF6200" />
-          </div>
-          <div className="p-2 border border-[#FF6200] rounded-lg hover:bg-[#FF6200]/10 transition-all cursor-pointer">
-            <FaceboookIcon width={20} height={20} color="#FF6200" />
-          </div>
-          <div className="p-2 border border-[#FF6200] rounded-lg hover:bg-[#FF6200]/10 transition-all cursor-pointer">
-            <LinkedinIcon width={20} height={20} color="#FF6200" />
-          </div>
+        <div className="absolute right-0 top-1/2 -translate-y-1/2 flex flex-col gap-6 z-20">
+          {/* <div className="p-2 border border-[#FF6200] rounded-lg hover:bg-[#FF6200]/10 transition-all cursor-pointer"> */}
+            <InstagramIcon width={20} height={20} color="#FF6200" stroke="#FF6200" strokeWidth={2} />
+          {/* </div> */}
+          {/* <div className="p-2 border border-[#FF6200] rounded-lg hover:bg-[#FF6200]/10 transition-all cursor-pointer"> */}
+            <FaceboookIcon width={20} height={20} color="#FF6200" stroke="#FF6200" strokeWidth={2} />
+          {/* </div> */}
+          {/* <div className="p-2 border border-[#FF6200] rounded-lg hover:bg-[#FF6200]/10 transition-all cursor-pointer"> */}
+            <LinkedinIcon width={20} height={20} color="#FF6200" stroke="#FF6200" strokeWidth={2} />
+          {/* </div> */}
         </div>
 
         {/* Drone Composition overlapping Bottom Border */}
-        <div className="relative w-full max-w-[1000px] -mt-32 md:-mt-48 z-20 pointer-events-none drop-shadow-[0_50px_50px_rgba(0,0,0,0.9)] flex justify-center">
+        <div className="absolute w-1/2 bottom-[2%] max-w-[1000px] -mt-32 md:-mt-48 z-20 pointer-events-none drop-shadow-[0_50px_50px_rgba(0,0,0,0.9)] flex justify-center">
            <img 
              src="/src/assets/images/dronket/HeroDron.png" 
              alt="Hero Drone" 
@@ -110,18 +110,20 @@ const HeroSection = () => {
         </div>
 
         {/* Bottom Ornaments (+) */}
-        <div className="w-full flex justify-between px-10 md:px-20 pb-10 z-20 -mt-8 md:-mt-16">
+        <div className="absolute bottom-[2%] w-full flex justify-between px-10 md:px-20 pb-10 z-20 -mt-8 md:-mt-16">
           {/* Left ( + ) */}
           <div className="flex items-center gap-2">
-            <img src="/src/assets/svg/Ellipse 262.svg" alt="shape" className="w-10 md:w-16 h-auto scale-x-[-1]" />
-            <img src="/src/assets/svg/Star 8.svg" alt="star" className="w-8 md:w-12 h-auto" />
-            <img src="/src/assets/svg/Ellipse 262.svg" alt="shape" className="w-10 md:w-16 h-auto" />
+            <img src="/src/assets/svg/Ellipse 262.svg" alt="shape" className="w-5 md:w-10 h-auto" />
+            <img src="/src/assets/svg/Ellipse 262.svg" alt="shape" className="w-5 md:w-10 h-auto" />
+            <img src="/src/assets/svg/Star 8.svg" alt="star" className="w-5 md:w-16 h-auto" />
+            <img src="/src/assets/svg/Ellipse 262.svg" alt="shape" className="w-5 md:w-10 h-auto scale-x-[-1]" />
           </div>
           {/* Right ( + ) */}
           <div className="flex items-center gap-2">
-            <img src="/src/assets/svg/Ellipse 262.svg" alt="shape" className="w-10 md:w-16 h-auto scale-x-[-1]" />
-            <img src="/src/assets/svg/Star 8.svg" alt="star" className="w-8 md:w-12 h-auto" />
-            <img src="/src/assets/svg/Ellipse 262.svg" alt="shape" className="w-10 md:w-16 h-auto" />
+            <img src="/src/assets/svg/Ellipse 262.svg" alt="shape" className="w-5 md:w-10 h-auto" />
+            <img src="/src/assets/svg/Star 8.svg" alt="star" className="w-5 md:w-16 h-auto" />
+            <img src="/src/assets/svg/Ellipse 262.svg" alt="shape" className="w-5 md:w-10 h-auto scale-x-[-1]" />
+            <img src="/src/assets/svg/Ellipse 262.svg" alt="shape" className="w-5 md:w-10 h-auto scale-x-[-1]" />
           </div>
         </div>
 

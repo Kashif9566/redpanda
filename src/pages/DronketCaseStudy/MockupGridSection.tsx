@@ -1,22 +1,22 @@
 
 const MockupGridSection = () => {
   return (
-    <section className="w-full py-20 px-6 md:px-12 relative overflow-hidden flex justify-center items-center">
-      <div className="w-full max-w-[1200px] flex justify-center items-center gap-6 md:gap-10 perspective-[1000px]">
+    <section className="w-full pt-10 pb-0 md:pt-20 flex justify-center items-end overflow-hidden">
+      <div className="flex flex-row justify-between items-end w-full max-w-screen">
         <img 
           src="/src/assets/images/dronket/2ndSectionStart.png" 
           alt="App Mockup Left" 
-          className="w-[30vw] max-w-[350px] -rotate-12 translate-y-24 object-contain shadow-xl"
+          className="w-[35%] md:w-[50%] object-contain -mr-[12%] md:-mr-[22%] z-0"
         />
         <img 
           src="/src/assets/images/dronket/2ndSecrionMiddle.png" 
           alt="App Mockup Center" 
-          className="w-[35vw] max-w-[450px] -rotate-12 z-10 -translate-y-12 object-contain drop-shadow-[0_25px_25px_rgba(255,98,0,0.15)]"
+          className="w-[40%] md:w-[60%] object-contain z-10"
         />
         <img 
           src="/src/assets/images/dronket/2ndSectionEnd.png" 
           alt="App Mockup Right" 
-          className="w-[30vw] max-w-[350px] -rotate-12 translate-y-32 object-contain shadow-xl"
+          className="w-[35%] md:w-[40%] object-contain -ml-[12%] md:-ml-[24%] z-0"
         />
       </div>
     </section>

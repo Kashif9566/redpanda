@@ -10,8 +10,8 @@ const DronketCaseStudy = () => {
   return (
     <div className="w-full min-h-screen bg-[#101010] text-[#FAFAFA] font-k2d overflow-x-hidden">
       <HeroSection />
-      <MockupGridSection />
       <SolutionSection />
+      <MockupGridSection />
       <ExposureSection />
       <VisualIdentitySection />
       <BrandAssetsSection />
