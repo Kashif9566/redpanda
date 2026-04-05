@@ -4,7 +4,7 @@ const ClientProblems = () => {
     <div className="w-full flex flex-col bg-[#E2E2E2]">
       {/* Banner */}
       <div className="w-full bg-[#02612B] py-16 md:py-24 flex items-center justify-center">
-        <h2 className="font-old-english text-6xl md:text-8xl lg:text-[10rem] text-[#FAFAFA] tracking-tight">
+        <h2 className="font-old-english text-6xl md:text-8xl lg:text-[12rem] text-[#FAFAFA] tracking-tight">
           Client Problems
         </h2>
       </div>

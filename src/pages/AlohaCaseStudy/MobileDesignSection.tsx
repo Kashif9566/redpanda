@@ -1,7 +1,7 @@
 
 const MobileDesignSection = () => {
   return (
-    <div className="w-full flex flex-col md:flex-row items-center justify-between px-6 md:px-12 py-16 gap-12 bg-[#FAFAFA]">
+    <div className="w-full flex flex-col md:flex-row items-center justify-between px-6 md:px-12 py-16 gap-12">
       
       {/* Left Column - Mobile Mockup Image */}
       <div className="w-full md:w-[40%] flex justify-center md:justify-start">
@@ -13,7 +13,7 @@ const MobileDesignSection = () => {
       </div>
 
       {/* Right Column - Text */}
-      <div className="w-full md:w-[60%] flex flex-col space-y-8">
+      <div className="w-full flex flex-col space-y-8">
         <h2 className="text-4xl md:text-6xl font-antonio font-bold uppercase leading-[1.1] tracking-tight">
           <span className="text-[#101010]">ALOHA COMPANY FORMATION </span>
           <span className="text-[#02612B]">UI UX DESIGN & DEVELOPMENT</span>
